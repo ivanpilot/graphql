@@ -1,0 +1,16 @@
+const express = require('express');
+const expressGrapQL = require('express-graphql');
+
+
+const app = express();
+
+// this middleware is purely for development purpose
+app.use('/graphql', expressGrapQL({
+    graphiql: true
+}))
+
+app.get('/', (req, res) => {
+    res.send('Hello World!!')
+})
+
+app.listen(4000, () => console.log('Listening on port 4000'))
