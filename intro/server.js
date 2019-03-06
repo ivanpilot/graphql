@@ -1,11 +1,13 @@
 const express = require('express');
 const expressGrapQL = require('express-graphql');
+const schema = require('./schema/schema');
 
 
 const app = express();
 
 // this middleware is purely for development purpose
 app.use('/graphql', expressGrapQL({
+    schema: schema,
     graphiql: true
 }))
 
