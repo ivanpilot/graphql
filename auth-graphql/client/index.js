@@ -6,6 +6,8 @@ import { hashHistory, Router, Route, IndexRoute } from 'react-router';
 import App from './components/App';
 import LoginForm from './components/LoginForm';
 import SignupForm from './components/SignupForm';
+import Dashboard from './components/Dashboard';
+import requireAuth from './components/requireAuth';
 
 // Apollo client is the thing that makes the request to our graphql backend server
 // This is the place where we can configure our graphql acts with our backend like fwding cookies for instance
@@ -33,6 +35,7 @@ const Root = () => {
         <Route path="/" component={App}>
           <Route path="/login" component={LoginForm} />
           <Route path="/signup" component={SignupForm} />
+          <Route path="/dashboard" component={requireAuth(Dashboard)} />
         </Route>
       </Router>
     </ApolloProvider>
