@@ -1,0 +1,11 @@
+{
+    "hotels": [
+      { "id": "1", "name": "Plaza", "city": "Paris" },
+      { "id": "2", "name": "Georges V", "city": "Paris" }
+    ],
+    "managers": [
+      { "id": "1", "userId": "1", "hotelId": "1" },
+      { "id": "2", "userId": "2", "hotelId": "1" },
+      { "id": "3", "userId": "3", "hotelId": "2" }
+    ]
+}

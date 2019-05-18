@@ -1,0 +1,7 @@
+{
+    "users": [
+      { "id": "1", "firstName": "Ivan", "lastName": "Pilot", "managerId": "1" },
+      { "id": "2", "firstName": "Dalila", "lastName": "Hammoud", "managerId": "1" },
+      { "id": "3", "firstName": "Paul", "lastName": "Lynch", "managerId": "3" }
+    ]
+}
